@@ -5,11 +5,11 @@ var htmlTag = document.documentElement;
 let isExpanded = false;
 
 globalbutton.addEventListener("click", function(){
-    if (isExpanded){
+    if (isExpanded) {
         flyout.classList.remove("flyout-open");
         globalbutton.textContent = "Expand";
         globalbutton.style.background = "#9ACD32";
-        htmlTag.classList.remove("global-nav-noscroll")
+        htmlTag.classList.remove("global-nav-noscroll");
         isExpanded = false;
     } else {
         flyout.classList.add("flyout-open");
@@ -65,3 +65,17 @@ popup.addEventListener("click", function(event){
         htmlTag.classList.remove("popup-open");
     }
 });
+
+function showContent(){
+    var flavors = document.getElementById("selector-dropdown").value;
+    var fuzhourc = document.getElementById("fuzhou-rice-cake");
+    var pandanrc = document.getElementById("pandan-rice-cake");
+
+    if (flavors == "fuzhou"){
+        fuzhourc.style.display = "block";
+        pandanrc.style.display = "none";
+    } else if (flavors == "pandan"){
+        fuzhourc.style.display = "none";
+        pandanrc.style.display = "block";
+    } 
+}

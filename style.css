@@ -348,6 +348,7 @@ a {
 
 #global-home .gloabl-card-img{
     width: 100%;
+    pointer-events: none;
 }
 
 #global-home .gloabl-card-img img{
@@ -437,6 +438,7 @@ a {
     height: 48px;
     padding-bottom: 5px;
     margin: 0;
+    pointer-events: none;
 }
 
 #global-small-card-grid .svgicon{
@@ -735,23 +737,26 @@ a {
 }
 
 #global-baiguo .global-title{
+    transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+    width: 100%;
+    height: 51px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#global-baiguo .global-title span{
     font-size: 21px;
     line-height: 23px;
     font-weight: bold;
-    float: left;
-    padding: 14px 0;
     color: #000;
-    transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
-    width: 100%;
-    height: 23px;
-    text-align: center;
+    padding: 14px 0;
 }
 
 #global-baiguo .global-information{
     display: block;
     width: 100%;
     height: auto;
-    padding-top: 51px;
 }
 
 #global-baiguo .info-section{
@@ -792,6 +797,7 @@ a {
 #global-baiguo .product-diagram{
     position: relative;
     padding: 60px 0 47px 0;
+    pointer-events: none;
 }
 
 #global-baiguo .product-diagram img{
@@ -954,7 +960,12 @@ a {
     #global-baiguo .global-title{
         font-size: 19px;
         line-height: 23px;
-        height: 23px;
+        height: 51px;
+    }
+
+    #global-baiguo .global-title span{
+        font-size: 19px;
+        line-height: 23px;
     }
 
     #global-baiguo .info-section{
@@ -992,4 +1003,31 @@ a {
         display: block;
         margin: 0 auto;
     }
+}
+
+#global-baiguo .selector-element{
+    position: relative;
+    background: inherit;
+    border: 1px solid #d2d2d7;
+    border-radius: 10px;
+    margin: 6px 10px 6px 0;
+    width: 130px;
+}
+
+#global-baiguo .selector-dropdown{
+    font-size: 21px;
+    line-height: 23px;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+    padding: 6px 12px;
+    color: #000;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#pandan-rice-cake{
+    display: none;
 }
