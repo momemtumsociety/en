@@ -31,7 +31,7 @@ button{
     text-align: left;
 }
 
-h2, p {
+h1, h2, p, h3, h4 {
     margin: 0;
     padding: 0;
 }
@@ -256,7 +256,7 @@ a {
 #global-home .column{
     box-sizing: border-box;
     margin: 0;
-    padding: 22px 0 36px 0;
+    padding: 80px 0 36px 0;
 }
 
 #global-home .global-home-header{
@@ -582,7 +582,7 @@ a {
 
 #global-footer .global-footer-content{
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 16px;
     max-width: 980px;
 }
 
@@ -631,15 +631,16 @@ a {
 
 @media only screen and (max-width: 756px){
     #global-home .column{
-        padding: 22px 0 24px 0;
+        padding: 56px 0 46px 0;
     }
 
     #global-home .global-home-cardshelf{
-        padding: 0 24px 28px 24px;
+        padding: 0 24px 50px 24px;
     }
 
     #global-home .global-home-card-grid{
         grid-template-columns: repeat(1, 1fr);
+        grid-gap: 24px;
     }
 
     #global-home .global-card{
@@ -669,6 +670,7 @@ a {
 
     #global-small-card-grid{
         grid-template-columns: repeat(1, 1fr);
+        grid-gap: 24px;
     }
 
     #global-small-card-grid .global-card{
@@ -804,6 +806,13 @@ a {
     max-height: 300px;
     height: 300px;
     width: auto;
+}
+
+#global-baiguo .product-diagram.redwine img{
+    max-height: none;
+    height: auto;
+    max-width: 300px;
+    width: 300px;
 }
 
 #global-baiguo .info-column{
@@ -1003,6 +1012,13 @@ a {
         display: block;
         margin: 0 auto;
     }
+
+    #global-baiguo .product-diagram.redwine img{
+        max-height: none;
+        height: auto;
+        max-width: 200px;
+        width: 200px;
+    }
 }
 
 #global-baiguo .selector-element{
@@ -1011,7 +1027,7 @@ a {
     border: 1px solid #d2d2d7;
     border-radius: 10px;
     margin: 6px 10px 6px 0;
-    width: 130px;
+    width: 135px;
 }
 
 #global-baiguo .selector-dropdown{
@@ -1030,4 +1046,158 @@ a {
 
 #pandan-rice-cake{
     display: none;
+}
+
+/* Contact Page */
+#main{
+    display: block;
+}
+
+#main .section{
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+#main .section-content{
+    margin: 0 auto;
+    padding: 0 48px;
+    width: calc(100% - 96px);
+    max-width: 980px;
+    height: auto;
+}
+
+#main .title{
+    padding: 0;
+    color: #1d1d1f;
+    font-size: 62px;
+    line-height: 66px;
+    font-weight: bold;
+    margin: 80px 0;
+}
+
+.section-info .section-content{
+    display: block;
+}
+
+.section-info .features{
+    border: 1px solid #d2d2d7;
+    background: #fff;
+    border-radius: 18px;
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+.section-info .content{
+    padding: 30px 24px;
+    overflow: hidden;
+}
+
+.section-info .email-address{
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.section-info .email-address h3{
+    margin: 20px 0;
+    padding: 0;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: bold;
+    display: block;
+}
+
+.section-info .email-address a{
+    cursor: pointer;
+    color: #FF6C00;
+}
+
+.section-info .section-social-media{
+    border-top: 1px solid #d2d2d7;
+    padding-bottom: 50px;
+}
+
+.section-info .features-row{
+    text-align: center;
+}
+
+.section-info .sub-title{
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: bold;
+    display: block;
+    margin: 22px 0 11px 0;
+}
+
+.section-info .row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.section-info .features-column{
+    flex-basis: 100%;
+    max-width: 100%;
+    margin: 28px 0 0;
+}
+
+.section-info .features-column h4{
+    color: #1d1d1f;
+    font-size: 19px;
+    line-height: 23px;
+    font-weight: bold;
+}
+
+.section-info .features-column h4+*{
+    margin-top: 14px;
+}
+
+.section-info .features-column p+*{
+    margin-top: 14px;
+}
+
+.section-info .features-column a{
+    cursor: pointer;
+    color: #FF6C00;
+}
+
+@media only screen and (max-width: 734px){
+    #main .title{
+        font-size: 36px;
+        margin: 60px 0;
+        text-align: left;
+    }
+
+    #main .section-info .section-content{
+        padding: 0;
+        width: 100%;
+    }
+
+    .section-info .features{
+        border: none;
+        border-radius: 0;
+    }
+
+    .section-info .content{
+        padding: 30px 48px;
+        text-align: left;
+    }
+
+    .section-info .email-address h3{
+        font-size: 21px;
+        line-height: 25px;
+        font-weight: bold;
+    }
+
+    .section-info .features-row{
+        text-align: left;
+    }
+
+    .section-info .sub-title{
+        font-size: 21px;
+        line-height: 25px;
+        font-weight: bold;
+    }
 }
