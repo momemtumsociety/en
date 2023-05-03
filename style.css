@@ -1111,6 +1111,8 @@ a {
 .section-info .email-address a{
     cursor: pointer;
     color: #FF6C00;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .section-info .section-social-media{
