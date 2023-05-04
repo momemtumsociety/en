@@ -1096,7 +1096,7 @@ a {
 }
 
 .section-info .content{
-    padding: 30px 24px;
+    padding: 30px 24px 50px 24px;
     overflow: hidden;
 }
 
@@ -1234,6 +1234,20 @@ a {
         width: 100%;
     }
 
+    .contact-info .row h2{
+        font-size: 26px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+
+    .contact-info .wrapper h3{
+        font-size: 19px;
+        line-height: 23px;
+        font-weight: bold;
+        display: block;
+        margin: 25px 0 8px 0;
+    }
+
     .section-info .features{
         border: none;
         border-radius: 0;
@@ -1241,7 +1255,7 @@ a {
     }
 
     .section-info .content{
-        padding: 30px 48px;
+        padding: 30px 48px 50px 48px;
         text-align: left;
     }
 
@@ -1306,5 +1320,174 @@ a {
         line-height: 25px;
         font-weight: bold;
         margin: 25px 0 8px 0;
+    }
+}
+
+/* About Us Page */
+#main .about-info{
+    text-align: left;
+}
+
+.about-info .about-inner{
+    padding-bottom: 50px;
+    border-bottom: 1px solid #d2d2d7;
+}
+
+.about-info .row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.about-info .row h2{
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: bold;
+}
+
+.about-info .features-column{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.about-info .wrapper{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about-info .wrapper p{
+    margin-top: 29px;
+}
+
+.about-info .wrapper p+p{
+    margin-top: 30px;
+}
+
+.about-info .wrapper a{
+    color: #FF6C00;
+}
+
+#main .about-ne-info{
+    text-align: left;
+    padding-top: 50px;
+}
+
+.about-ne-info .about-ne-inner{
+    padding-bottom: 50px;
+}
+
+.about-ne-info .grid{
+    position: relative;
+    display: grid;
+    grid-gap: 48px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+.about-ne-info .subtitle{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 14px;
+}
+
+.about-ne-info .subtitle h2{
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: bold;
+}
+
+.about-ne-info .contain{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background: #f5f5f7;
+    border: 1px solid #d2d2d7;
+    border-radius: 18px;
+    height: fit-content;
+    width: 100%;
+    white-space: normal;
+    transition: all .3s cubic-bezier(0,0.1,0.5,1);
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.about-ne-info .row{
+    padding: 32px;
+    flex-basis: 100%;
+    max-width: 100%;
+    text-decoration: none;
+}
+
+.about-ne-info .title-category{
+    color: #6e6e73;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.about-ne-info .title-headline{
+    color: #1d1d1f;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.about-ne-info .title-timestamp{
+    color: #6e6e73;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 12px;
+}
+
+@media only screen and (max-width: 734px){
+    .about-info .row h2{
+        font-size: 26px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+
+    .about-info .wrapper p{
+        margin-top: 25px;
+    }
+
+    .about-ne-info .grid{
+        grid-gap: 48px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-ne-info .subtitle h2{
+        font-size: 26px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+
+    .about-ne-info .row{
+        padding: 24px;
+    }
+
+    .about-ne-info .title-category{
+        margin-bottom: 4px;
+    }
+    
+    .about-ne-info .title-headline{
+        font-size: 19px;
+        line-height: 23px;
+        font-weight: 700;
+    }
+
+    .about-ne-info .title-timestamp{
+        margin-top: 8px;
     }
 }
