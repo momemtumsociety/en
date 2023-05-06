@@ -869,6 +869,10 @@ a {
     color: #161617;
 }
 
+.source .icon:hover{
+    background: #e8e8ed;
+}
+
 @media only screen and (max-width: 734px){
     .pagetitle .headline{
         font-size: 32px;
