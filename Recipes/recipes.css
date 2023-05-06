@@ -432,7 +432,7 @@ a {
 }
 
 .pagebody{
-    margin: 0 auto;
+    margin: 0 auto 52px auto;
     padding: 0 24px;
     width: calc(100% - 48px);
     max-width: 980px;
@@ -442,9 +442,21 @@ a {
 }
 
 .pagebody .content{
-    padding-bottom: 52px;
     flex-basis: 50%;
     width: 50%;
+}
+
+.pagebody .content.left{
+    padding-right: 24px;
+    flex-basis: calc(50% - 25px);
+    width: calc(50% - 25px);
+    border-right: 1px solid #86868b;
+}
+
+.pagebody .content.right{
+    padding-left: 24px;
+    flex-basis: calc(50% - 24px);
+    width: calc(50% - 24px);
 }
 
 .pagebody .headline{
@@ -870,10 +882,24 @@ a {
 
     .pagebody{
         flex-direction: column;
+        margin: 0 auto 40px auto;
     }
 
     .pagebody .content{
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .pagebody .content.left{
+        padding: 0;
+        flex-basis: 100%;
+        width: 100%;
+        border: none;
         padding-bottom: 40px;
+    }
+
+    .pagebody .content.right{
+        padding: 0;
         flex-basis: 100%;
         width: 100%;
     }
