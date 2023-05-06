@@ -1549,13 +1549,13 @@ a {
 }
 
 .recipes-info .hokkien-fried-rice-cake-image{
-    background: url('../Images/Recipes/hokkien-fried-rice-cake.jpg') no-repeat top;
+    background: url(Images/Recipes/hokkien-fried-rice-cake.jpg) no-repeat top;
     background-size: cover;
     height: 100%;
 }
 
 .recipes-info .apple-google-image{
-    background: url('../Images/Recipes/Apple-Google-partner-industry-specification-hero.jpg') no-repeat top;
+    background: url(Images/Recipes/Apple-Google-partner-industry-specification-hero.jpg) no-repeat top;
     background-size: cover;
     height: 100%;
 }
