@@ -1491,3 +1491,127 @@ a {
         margin-top: 8px;
     }
 }
+
+/* Recipes Page */
+#main .recipes-info{
+    text-align: left;
+}
+
+#main .recipes-info .section-content{
+    margin: 0 auto;
+    padding: 0 24px;
+    width: calc(100% - 48px);
+    max-width: 980px;
+    height: auto;
+}
+
+.recipes-info .recipes-inner{
+    padding-bottom: 50px;
+}
+
+.recipes-info .grid{
+    position: relative;
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+.recipes-info .grid-card{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.recipes-info .tile{
+    position: relative;
+    background: #fff;
+    display: flex;
+    border-radius: 18px;
+    overflow: hidden;
+    z-index: 0;
+    text-decoration: none;
+    height: 100%;
+    width: auto;
+    flex-direction: column;
+}
+
+.recipes-info .tile-media{
+    position: relative;
+    z-index: 0;
+    flex-grow: 0;
+    overflow: hidden;
+    direction: ltr;
+    height: 180px;
+    width: 100%;
+    flex-basis: auto;
+    flex-shrink: 1;
+}
+
+.recipes-info .hokkien-fried-rice-cake-image{
+    background: url('../Images/Recipes/hokkien-fried-rice-cake.jpg') no-repeat top;
+    background-size: cover;
+    height: 100%;
+}
+
+.recipes-info .apple-google-image{
+    background: url('../Images/Recipes/Apple-Google-partner-industry-specification-hero.jpg') no-repeat top;
+    background-size: cover;
+    height: 100%;
+}
+
+.recipes-info .tile-description{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 1;
+    padding: 32px;
+    flex-basis: auto;
+}
+
+.recipes-info .tile-category{
+    color: #6e6e73;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.recipes-info .tile-headline{
+    color: #1d1d1f;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.recipes-info .tile-timestamp{
+    color: #6e6e73;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 12px;
+}
+
+@media only screen and (max-width: 734px){
+    .recipes-info .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .recipes-info .tile-description{
+        padding: 24px;
+    }
+
+    .recipes-info .tile-headline{
+        font-size: 19px;
+        line-height: 23px;
+        font-weight: 700;
+    }
+
+    .recipes-info .tile-timestamp{
+        margin-top: 8px;
+    }
+}
