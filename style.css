@@ -135,11 +135,11 @@ a {
 
 #global-nav .global-er-button{
     border: none;
-    background: #9acd32;
+    background: #fff;
     margin: 0;
     padding: 3px 11px;
-    color: #fff;
-    border-radius: 12px;
+    color: #9acd32;
+    border-radius: 8px;
     font-size: 12px;
     font-weight: normal;
     line-height: 16px;
@@ -1550,6 +1550,12 @@ a {
 
 .recipes-info .hokkien-fried-rice-cake-image{
     background: url('Images/Recipes/hokkien-fried-rice-cake.jpg') no-repeat top;
+    background-size: cover;
+    height: 100%;
+}
+
+.recipes-info .rice-cake-soup-image{
+    background: url('Images/Recipes/rice-cake-soup.jpg') no-repeat top;
     background-size: cover;
     height: 100%;
 }

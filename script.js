@@ -8,13 +8,11 @@ globalbutton.addEventListener("click", function(){
     if (isExpanded) {
         flyout.classList.remove("flyout-open");
         globalbutton.textContent = "Expand";
-        globalbutton.style.background = "#9ACD32";
         htmlTag.classList.remove("global-nav-noscroll");
         isExpanded = false;
     } else {
         flyout.classList.add("flyout-open");
         globalbutton.textContent = "Retract";
-        globalbutton.style.background = "#9ACD32";
         htmlTag.classList.add("global-nav-noscroll");
         isExpanded = true;
     }
