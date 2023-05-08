@@ -1560,6 +1560,18 @@ a {
     height: 100%;
 }
 
+.recipes-info .brown-sugar-rice-cake-image{
+    background: url('Images/Recipes/brown-sugar-rice-cake.jpg') no-repeat top;
+    background-size: cover;
+    height: 100%;
+}
+
+.recipes-info .spicy-fried-rice-cake-image{
+    background: url('Images/Recipes/spicy-fried-rice-cake.jpg') no-repeat top;
+    background-size: cover;
+    height: 100%;
+}
+
 .recipes-info .tile-description{
     display: flex;
     flex-direction: column;
