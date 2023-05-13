@@ -1098,10 +1098,10 @@ a {
 .section-info .content{
     padding: 30px 24px 50px 24px;
     overflow: hidden;
+    text-align: left;
 }
 
 .section-info .email-address{
-    text-align: center;
     margin: 0 auto;
     padding-bottom: 50px;
 }
@@ -1125,10 +1125,6 @@ a {
 .section-info .section-social-media{
     border-top: 1px solid #d2d2d7;
     padding-bottom: 50px;
-}
-
-.section-info .features-row{
-    text-align: center;
 }
 
 .section-info .sub-title{
