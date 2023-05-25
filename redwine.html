@@ -10,99 +10,98 @@
     </head>
     <body>
         <!-- Header -->
-        <section id="global-header">
-            <!-- Header - Page -->
-            <nav id="global-nav">
-                <div class="global-nav-content">
-                    <div class="global-logo">
-                        <a href="index.html" class="global-logo-link">
-                            <span>MOMENTUM SOCIETY</span>
+        <section id="global-nav">
+            <div class="global-nav-content">
+                <ul class="global-nav-list">
+                    <li class="global-nav-item global-nav-logo">
+                        <a href="index.html" class="global-nav-link">
+                            <span class="global-nav-image">
+                                <img src="Icon/ms-logo-nav.png">
+                            </span>
                         </a>
-                    </div>
-                    <ul class="global-nav-list">
-                        <li class="global-nav-item">
-                            <a href="baiguo.html" class="global-nav-link">
-                                <span class="global-nav-link-text">BAIGUO</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="ricecake.html" class="global-nav-link">
-                                <span class="global-nav-link-text">Rice Cake</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="redwine.html" class="global-nav-link">
-                                <span class="global-nav-link-text">FUZHOU Red Wine</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="about.html" class="global-nav-link">
-                                <span class="global-nav-link-text">About MS</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="contact.html" class="global-nav-link">
-                                <span class="global-nav-link-text">Contact MS</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="recipes.html" class="global-nav-link">
-                                <span class="global-nav-link-text">MS Recipes</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="global-button">
-                        <button id="global-er-button" class="global-er-button">Expand</button>
-                    </div>
-                </div>
-            </nav>
-            <!-- Header - Mobile -->
-            <div id="global-flyout-background" class="global-flyout-backgroung">
-                <div id="global-nav-flyout" class="global-nav-flyout">
-                    <ul class="global-nav-flyout-content">
-                        <li class="global-nav-item">
-                            <a href="baiguo.html" class="global-nav-link">
-                                <span class="global-nav-link-text">BAIGUO</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="ricecake.html" class="global-nav-link">
-                                <span class="global-nav-link-text">Rice Cake</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="redwine.html" class="global-nav-link">
-                                <span class="global-nav-link-text">FUZHOU Red Wine</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="about.html" class="global-nav-link">
-                                <span class="global-nav-link-text">About MS</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="contact.html" class="global-nav-link">
-                                <span class="global-nav-link-text">Contact MS</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="recipes.html" class="global-nav-link">
-                                <span class="global-nav-link-text">MS Recipes</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    </li>
+                    <li class="global-nav-item global-nav-stp-button">
+                        <div id="global-nav-stp" class="global-nav-stp-wrapper">
+                            <div class="global-nav-link-stp" onclick="scrollToTop()">
+                                <span class="global-nav-image">
+                                    <img src="Icon/arrow-circle-up.png" class="arrow" title="slide to top">
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="global-nav-menu-list" class="global-nav-list bar">
+                    <li class="global-nav-item global-nav-menu">
+                        <div class="global-nav-menu-list" onclick="opennavFunction()">
+                            <div class="global-nav-menu-list-content">
+                                <div class="menu-title">
+                                    <span class="menu-title-text">
+                                        FUZHOU Red Wine
+                                    </span>
+                                </div>
+                                <div class="menu-list">
+                                    <!-- BAIGUO -->
+                                    <div class="global-nav-submenu">
+                                        <a href="baiguo.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                BAIGUO
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- Rice Cake -->
+                                    <div class="global-nav-submenu">
+                                        <a href="ricecake.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                Rice Cake
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- Red Wine -->
+                                    <div class="global-nav-submenu">
+                                        <a href="redwine.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                FUZHOU Red Wine
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- About MS -->
+                                    <div class="global-nav-submenu">
+                                        <a href="about.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                About MS
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- Contact MS -->
+                                    <div class="global-nav-submenu">
+                                        <a href="contact.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                Contact MS
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- MS Recipes -->
+                                    <div class="global-nav-submenu">
+                                        <a href="recipes.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                MS Recipes
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
+        <label id="global-nav-curtain"></label>
         <!-- Main Content -->
         <section id="global-baiguo">
             <div class="section-content">
-                <div class="global-title">
-                    <span>FUZHOU Red Wine</span>
-                </div>
                 <div class="global-information">
                     <!-- Size and Weight -->
-                    <div class="info-section">
+                    <div class="info-section first">
                         <div class="info-row">
                             <div class="info-rowheader">
                                 Size and Weight
@@ -128,7 +127,7 @@
                                             <strong>
                                                 Width:
                                             </strong>
-                                            70ml
+                                            70mm
                                         </p>
                                         <p>
                                             <strong>

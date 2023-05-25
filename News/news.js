@@ -1,23 +1,74 @@
-var globalbutton = document.getElementById("global-er-button");
-var flyout = document.getElementById("global-flyout-background");
-var htmlTag = document.documentElement;
+//Nav
+//click button to open DI
+function opennavFunction() {
+    const selectElement = (element) => document.querySelector(element);
 
-let isExpanded = false;
+    selectElement('#global-nav-menu-list').classList.toggle('open');
+    selectElement('#global-nav-curtain').classList.toggle('open');
+    selectElement('#global-nav-stp').classList.remove('active');
 
-globalbutton.addEventListener("click", function(){
-    if (isExpanded) {
-        flyout.classList.remove("flyout-open");
-        globalbutton.textContent = "Expand";
-        htmlTag.classList.remove("global-nav-noscroll");
-        isExpanded = false;
+    //add function to curtain and click curtain to close
+    selectElement('#global-nav-curtain').addEventListener('click', () => {
+        selectElement('#global-nav-menu-list').classList.remove('open');
+        selectElement('#global-nav-curtain').classList.remove('open');
+
+        //close the DI and add STP button
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+            selectElement('#global-nav-stp').classList.add('active');
+        } else {
+            selectElement('#global-nav-stp').classList.remove('active');
+        };
+    });
+
+    //close the DI when click the button inside
+    selectElement('.global-nav-submenu-link').addEventListener('click', () => {
+        selectElement('#global-nav-menu-list').classList.remove('open');
+        selectElement('#global-nav-curtain').classList.remove('open');
+    });
+
+    //add function when scroll
+    window.addEventListener('scroll', xFunction);
+
+    //close the DI when scroll the window
+    function xFunction(){
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10){
+            selectElement('#global-nav-menu-list').classList.remove('open');
+            selectElement('#global-nav-curtain').classList.remove('open');
+
+            //close the DI and add STP button
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+                selectElement('#global-nav-stp').classList.add('active');
+            } else {
+                selectElement('#global-nav-stp').classList.remove('active');
+            };
+        };
+    };
+};
+
+//Slide to Top (STP)
+//when scroll the window show the STP buttton
+window.addEventListener('scroll', showScrollButton);
+
+function showScrollButton(){
+    var scrollBtn = document.getElementById('global-nav-stp');
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+        scrollBtn.classList.add('active');
     } else {
-        flyout.classList.add("flyout-open");
-        globalbutton.textContent = "Retract";
-        htmlTag.classList.add("global-nav-noscroll");
-        isExpanded = true;
-    }
-});
+        scrollBtn.classList.remove('active');
+    };
+};
 
+//scroll the window to top
+function scrollToTop(){
+    var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+    if (currentPosition > 0){
+        window.requestAnimationFrame(scrollToTop);
+        window.scrollTo(0, currentPosition - currentPosition / 10);
+    };
+};
+
+
+// Image Gallery
 let imageIndex = 1;
 showImages(imageIndex);
 

@@ -10,90 +10,121 @@
     </head>
     <body>
         <!-- Header -->
-        <section id="global-header">
-            <!-- Header - Full Page -->
-            <nav id="global-nav">
-                <div class="global-nav-content">
-                    <div class="global-logo">
-                        <a href="index.html" class="global-logo-link">
-                            <span>MOMENTUM SOCIETY</span>
+        <section id="global-nav">
+            <div class="global-nav-content">
+                <ul class="global-nav-list">
+                    <li class="global-nav-item global-nav-logo">
+                        <a href="index.html" class="global-nav-link">
+                            <span class="global-nav-image">
+                                <img src="Icon/ms-logo-nav.png">
+                            </span>
                         </a>
-                    </div>
-                    <ul class="global-nav-list">
-                        <li class="global-nav-item">
-                            <a href="baiguo.html" class="global-nav-link">
-                                <span class="global-nav-link-text">BAIGUO</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="ricecake.html" class="global-nav-link">
-                                <span class="global-nav-link-text">Rice Cake</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="redwine.html" class="global-nav-link">
-                                <span class="global-nav-link-text">FUZHOU Red Wine</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="about.html" class="global-nav-link">
-                                <span class="global-nav-link-text">About MS</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="contact.html" class="global-nav-link">
-                                <span class="global-nav-link-text">Contact MS</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="recipes.html" class="global-nav-link">
-                                <span class="global-nav-link-text">MS Recipes</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="global-button">
-                        <button id="global-er-button" class="global-er-button">Expand</button>
-                    </div>
-                </div>
-            </nav>
-            <!-- Header - Mobile Page -->
-            <div id="global-flyout-background" class="global-flyout-backgroung">
-                <div id="global-nav-flyout" class="global-nav-flyout">
-                    <ul class="global-nav-flyout-content">
-                        <li class="global-nav-item">
-                            <a href="baiguo.html" class="global-nav-link">
-                                <span class="global-nav-link-text">BAIGUO</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="ricecake.html" class="global-nav-link">
-                                <span class="global-nav-link-text">Rice Cake</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="redwine.html" class="global-nav-link">
-                                <span class="global-nav-link-text">FUZHOU Red Wine</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="about.html" class="global-nav-link">
-                                <span class="global-nav-link-text">About MS</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="contact.html" class="global-nav-link">
-                                <span class="global-nav-link-text">Contact MS</span>
-                            </a>
-                        </li>
-                        <li class="global-nav-item">
-                            <a href="recipes.html" class="global-nav-link">
-                                <span class="global-nav-link-text">MS Recipes</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    </li>
+                    <li class="global-nav-item global-nav-stp-button">
+                        <div id="global-nav-stp" class="global-nav-stp-wrapper">
+                            <div class="global-nav-link-stp" onclick="scrollToTop()">
+                                <span class="global-nav-image">
+                                    <img src="Icon/arrow-circle-up.png" class="arrow" title="slide to top">
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="global-nav-menu-list" class="global-nav-list bar">
+                    <li class="global-nav-item global-nav-menu">
+                        <div class="global-nav-menu-list" onclick="opennavFunction()">
+                            <div class="global-nav-menu-list-content">
+                                <div class="menu-title">
+                                    <span class="menu-title-text">
+                                        Home
+                                    </span>
+                                </div>
+                                <div class="menu-list">
+                                    <!-- BAIGUO -->
+                                    <div class="global-nav-submenu">
+                                        <a href="baiguo.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                BAIGUO
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- Rice Cake -->
+                                    <div class="global-nav-submenu">
+                                        <a href="ricecake.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                Rice Cake
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- Red Wine -->
+                                    <div class="global-nav-submenu">
+                                        <a href="redwine.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                FUZHOU Red Wine
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- About MS -->
+                                    <div class="global-nav-submenu">
+                                        <a href="about.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                About MS
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- Contact MS -->
+                                    <div class="global-nav-submenu">
+                                        <a href="contact.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                Contact MS
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- MS Recipes -->
+                                    <div class="global-nav-submenu">
+                                        <a href="recipes.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                MS Recipes
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="global-popup-content" class="global-popup-content">
+                                    <div id="content-delivery" style="display: none;">
+                                        <h2 class="popup-header">Store delivery.</h2>
+                                        <p class="popup-info">Free delivery will be given, subject to specific requirements. Only local delivery is supported currently.</p>
+                                        <p class="popup-link">
+                                            <a href="delivery.html" taregt="_blank" class="link">
+                                                Learn more
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div id="content-customise" style="display: none;">
+                                        <h2 class="popup-header">Product customisation.</h2>
+                                        <p class="popup-info">Almost all of MS products are available for customisation. Whether you need to increase volume, develop flavors or customise packaging.</p>
+                                        <p class="popup-link">
+                                            <a href="contact.html" taregt="_blank" class="link">
+                                                Contact MS
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div id="content-cooperate" style="display: none;">
+                                        <h2 class="popup-header">Supply chain cooperation.</h2>
+                                        <p class="popup-info">MS provides products to companies to sell. Presentation of the products can be changed based on the companies' strategies.</p>
+                                        <p class="popup-link">
+                                            <a href="contact.html" taregt="_blank" class="link">
+                                                Contact MS
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
+        <label id="global-nav-curtain"></label>
         <!-- Main Content -->
         <section id="global-home">
             <!-- Page Title -->
@@ -124,14 +155,11 @@
                                     <a class="global-card-relatedlink" href="baiguo.html">
                                         <div class="global-card-content">
                                             <div class="gloabl-card-img">
-                                                <img width="400" height="500" src="Images/Home/baiguo_03.jpg">
+                                                <img width="200" height="200" src="Images/Home/baiguo-square.jpg">
                                             </div>
                                             <div class="global-card-content-info">
                                                 <div class="gloabl-card-content-header">
                                                     <div class="global-card-content-headerlink">BAIGUO</div>
-                                                </div>
-                                                <div class="gloabl-card-content-price">
-                                                    <b></b>
                                                 </div>
                                             </div>
                                         </div>
@@ -144,14 +172,11 @@
                                     <a class="global-card-relatedlink" href="ricecake.html">
                                         <div class="global-card-content">
                                             <div class="gloabl-card-img">
-                                                <img width="400" height="500" src="Images/Home/fuzhou-rice-cake.jpg">
+                                                <img width="400" height="500" src="Images/Home/fuzhou-rice-cake-square.jpg">
                                             </div>
                                             <div class="global-card-content-info">
                                                 <div class="gloabl-card-content-header">
                                                     <div class="global-card-content-headerlink">FUZHOU Rice Cake</div>
-                                                </div>
-                                                <div class="gloabl-card-content-price">
-                                                    <b></b>
                                                 </div>
                                             </div>
                                         </div>
@@ -164,14 +189,11 @@
                                     <a class="global-card-relatedlink" href="ricecake.html">
                                         <div class="global-card-content">
                                             <div class="gloabl-card-img">
-                                                <img width="400" height="500" src="Images/Home/pandan-rice-cake.jpg">
+                                                <img width="400" height="500" src="Images/Home/pandan-rice-cake-square.jpg">
                                             </div>
                                             <div class="global-card-content-info">
                                                 <div class="gloabl-card-content-header">
                                                     <div href="#" class="global-card-content-headerlink">Pandan Rice Cake</div>
-                                                </div>
-                                                <div class="gloabl-card-content-price">
-                                                    <b></b>
                                                 </div>
                                             </div>
                                         </div>
@@ -184,14 +206,11 @@
                                     <a class="global-card-relatedlink" href="redwine.html">
                                         <div class="global-card-content">
                                             <div class="gloabl-card-img">
-                                                <img width="400" height="500" src="Images/Home/fuzhou-red-wine.jpg">
+                                                <img width="400" height="500" src="Images/Home/fuzhou-red-wine-square.jpg">
                                             </div>
                                             <div class="global-card-content-info">
                                                 <div class="gloabl-card-content-header">
                                                     <div href="#" class="global-card-content-headerlink">FUZHOU Red Wine</div>
-                                                </div>
-                                                <div class="gloabl-card-content-price">
-                                                    <b></b>
                                                 </div>
                                             </div>
                                         </div>
@@ -275,50 +294,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Popup -->
-        <section id="global-popup">
-            <div class="global-popup-outline">
-                <div class="global-popup-outer">
-                    <div id="global-popup-content" class="global-popup-content">
-                        <div id="content-delivery">
-                            <h2 class="popup-header">Store delivery.</h2>
-                            <p class="popup-info">Free delivery will be given, subject to specific requirements. Only local delivery is supported currently.</p>
-                            <p class="popup-link">
-                                <a href="delivery.html" taregt="_blank" class="link">
-                                    Learn more
-                                </a>
-                            </p>
-                        </div>
-                        <div id="content-customise">
-                            <h2 class="popup-header">Product customisation.</h2>
-                            <p class="popup-info">Almost all of MS products are available for customisation. Whether you need to increase volume, develop flavors or customise packaging.</p>
-                            <p class="popup-link">
-                                <a href="contact.html" taregt="_blank" class="link">
-                                    Contact MS
-                                </a>
-                            </p>
-                        </div>
-                        <div id="content-cooperate">
-                            <h2 class="popup-header">Supply chain cooperation.</h2>
-                            <p class="popup-info">MS provides products to companies to sell. Presentation of the products can be changed based on the companies' strategies.</p>
-                            <p class="popup-link">
-                                <a href="contact.html" taregt="_blank" class="link">
-                                    Contact MS
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <button type="button" class="global-popup-close" id="global-popup-close">
-                    <span class="global-popup-close-svg">
-                        <svg width="21" height="21" class="popup-svgicon" role="img">
-                            <path fill="none" d="M0 0h21v21H0z"></path>
-                            <path d="M12.12 10l4.07-4.06a1.5 1.5 0 10-2.11-2.12L10 7.88 5.94 3.81a1.5 1.5 0 10-2.12 2.12L7.88 10l-4.07 4.06a1.5 1.5 0 000 2.12 1.51 1.51 0 002.13 0L10 12.12l4.06 4.07a1.45 1.45 0 001.06.44 1.5 1.5 0 001.06-2.56z"></path>
-                        </svg>
-                    </span>
-                </button>
             </div>
         </section>
         <!-- Footer -->
