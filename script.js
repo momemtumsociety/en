@@ -177,8 +177,8 @@ cooperatebutton.addEventListener('click', () => {
     document.querySelector('#global-nav-curtain').classList.toggle('popup-open');
     document.querySelector('#global-nav-stp').classList.remove('active');
     deliverycontent.style.display = "none";
-    customisecontent.style.display = "block";
-    cooperatecontent.style.display = "none";
+    customisecontent.style.display = "none";
+    cooperatecontent.style.display = "block";
     document.querySelector('#global-nav-curtain').addEventListener('click', () => {
         document.querySelector('#global-nav-menu-list').classList.remove('popup-open');
         document.querySelector('#global-nav-curtain').classList.remove('popup-open');

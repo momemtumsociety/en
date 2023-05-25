@@ -208,11 +208,13 @@ a {
 #global-nav .open .global-nav-menu-list-content{
     padding: 21px;
     width: calc(100% - 42px);
+    height: calc(100% - 42px);
 }
 
 #global-nav .popup-open .global-nav-menu-list-content{
     padding: 21px;
     width: calc(100% - 42px);
+    height: calc(100% - 42px);
 }
 
 #global-nav .menu-title{
