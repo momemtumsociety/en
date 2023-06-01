@@ -172,14 +172,16 @@ a {
     display: block;
     transition: height 0.7693s cubic-bezier(.4,0,.6,1) 0.07s, width 0.7693s cubic-bezier(.4,0,.6,1) 0.12s, border-radius 0.7693s cubic-bezier(.4,0,.6,1) 80ms, background 0.7693s cubic-bezier(.4,0,.6,1) 80ms;
     overflow: hidden;
+    cursor: pointer;
 }
 
 #global-nav .open .global-nav-menu-list{
     width: 100%;
-    height: 336px;
+    height: 420px;
     display: block;
     border-radius: 30px;
     margin: 10px auto 0 auto;
+    cursor: default;
     background: #1D1D1F;
     transition: height 0.7693s cubic-bezier(.4,0,.6,1) 0.07s, width 0.7693s cubic-bezier(.4,0,.6,1) 0.12s, border 0.7693s cubic-bezier(.4,0,.6,1) 80ms, background 0.7693s cubic-bezier(.4,0,.6,1) 80ms;
 }
@@ -191,7 +193,7 @@ a {
     border-radius: 30px;
     margin: 10px auto 0 auto;
     background: #1D1D1F;
-    pointer-events: none;
+    cursor: default;
     transition: height 0.7693s cubic-bezier(.4,0,.6,1) 0.07s, width 0.7693s cubic-bezier(.4,0,.6,1) 0.12s, border 0.7693s cubic-bezier(.4,0,.6,1) 80ms, background 0.7693s cubic-bezier(.4,0,.6,1) 80ms;
 }
 
@@ -206,7 +208,7 @@ a {
     line-height: 16px;
     position: relative;
     transition: .333s cubic-bezier(.5,0,.333,1);
-    cursor: pointer;
+    cursor: default;
 }
 
 #global-nav .open .global-nav-menu-list-content{
@@ -261,37 +263,70 @@ a {
 
 #global-nav .global-nav-submenu{
     box-sizing: border-box;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 47px;
     transition: color .32s cubic-bezier(.4,0,.6,1);
     margin: 0;
     padding: 0;
     pointer-events: none;
 }
 
-#global-nav .global-nav-submenu-link{
+#global-nav .global-nav-submenu-title{
     position: relative;
     background: no-repeat;
     transition: color .32s cubic-bezier(.4,0,.6,1);
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 26px;
     font-weight: bold;
     text-decoration: none;
-    color: #E8E8ED;
-    width: auto;
+    color: #505050;
+    width: 100%;
     height: auto;
     display: block;
     padding: 3px;
     white-space: normal;
     pointer-events: auto;
+    cursor: default;
+}
+
+#global-nav .global-nav-title-text{
+    height: 100%;
+    width: fit-content;
+    display: block;
+    align-items: center;
+    padding: 7.5px 0;
+}
+
+#global-nav .global-nav-submenu-link{
+    position: relative;
+    background: no-repeat;
+    transition: color .32s cubic-bezier(.4,0,.6,1);
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #E8E8ED;
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 3px;
+    white-space: normal;
+    pointer-events: auto;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+#global-nav .global-nav-submenu-link:hover{
+    background: #FF6C00;
 }
 
 #global-nav .global-nav-link-text-container{
     height: 100%;
-    display: flex;
+    width: fit-content;
+    display: block;
     align-items: center;
-    pointer-events: none;
     padding: 7.5px 0;
+    margin-left: 24px;
 }
 
 /* Nav - Popup */

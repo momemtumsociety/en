@@ -32,7 +32,7 @@
                 </ul>
                 <ul id="global-nav-menu-list" class="global-nav-list bar">
                     <li class="global-nav-item global-nav-menu">
-                        <div class="global-nav-menu-list" onclick="opennavFunction()">
+                        <div class="global-nav-menu-list" id="menu-list" onclick="opennavFunction()">
                             <div class="global-nav-menu-list-content">
                                 <div class="menu-title">
                                     <span class="menu-title-text">
@@ -40,6 +40,13 @@
                                     </span>
                                 </div>
                                 <div class="menu-list">
+                                    <div class="global-nav-submenu">
+                                        <div class="global-nav-submenu-title">
+                                            <span class="global-nav-title-text">
+                                                Products
+                                            </span>
+                                        </div>
+                                    </div>
                                     <!-- BAIGUO -->
                                     <div class="global-nav-submenu">
                                         <a href="../baiguo.html" class="global-nav-submenu-link">
@@ -64,6 +71,13 @@
                                             </span>
                                         </a>
                                     </div>
+                                    <div class="global-nav-submenu">
+                                        <div class="global-nav-submenu-title">
+                                            <span class="global-nav-title-text">
+                                                Others
+                                            </span>
+                                        </div>
+                                    </div>
                                     <!-- About MS -->
                                     <div class="global-nav-submenu">
                                         <a href="../about.html" class="global-nav-submenu-link">
@@ -87,6 +101,59 @@
                                                 MS Recipes
                                             </span>
                                         </a>
+                                    </div>
+                                </div>
+                                <div class="menu-timer" id="menu-timer">
+                                    <div class="menu-timer-content">
+                                        <div class="timer-header">
+                                            <div class="timer-title">
+                                                Timer
+                                            </div>
+                                            <div class="timer-countdown" id="timer-countdown">
+                                                00:00
+                                            </div>
+                                        </div>
+                                        <div class="timer-button">
+                                            <button type="button" class="start-puase-button">
+                                                <span class="st-button-background">
+                                                    <img src="..//Icon/big-play-icon.png" class="button-icon" id="timer-play-icon" onclick="spTimer()">
+                                                    <img src="..//Icon/reset-icon.png" class="button-icon" id="timer-reset-icon" onclick="resetTimer()">
+                                                    <img src="..//Icon/stop-icon.png" class="button-icon" id="timer-stop-icon" onclick="stopTimer()">
+                                                </span>
+                                            </button>
+                                            <button type="button" class="close-button" onclick="closeTimer()">
+                                                <span class="close-button-background">
+                                                    <img src="../Icon/big-close-icon.png" class="button-icon">
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="menu-timer-selector">
+                                        <button type="button" class="timer-selector-button" onclick="setTime(60)">
+                                            <span class="selector-button-text">
+                                                1 min
+                                            </span>
+                                        </button>
+                                        <button type="button" class="timer-selector-button" onclick="setTime(120)">
+                                            <span class="selector-button-text">
+                                                2 mins
+                                            </span>
+                                        </button>
+                                        <button type="button" class="timer-selector-button" onclick="setTime(300)">
+                                            <span class="selector-button-text">
+                                                5 mins
+                                            </span>
+                                        </button>
+                                        <button type="button" class="timer-selector-button" onclick="setTime(600)">
+                                            <span class="selector-button-text">
+                                                10 mins
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div id="countdown-audio">
+                                        <audio id="audio" preload="metadata">
+                                            <source src="../Audio/Radar.mp3" type="audio/mpeg">
+                                        </audio>
                                     </div>
                                 </div>
                             </div>
@@ -387,6 +454,22 @@
         <!-- Footer -->
         <section id="global-footer">
             <div class="global-footer-content">
+                <div class="global-footer-directory">
+                    <div class="global-footer-directory-column">
+                        <div class="global-footer-directory-column-section">
+                            <h3 class="global-footer-directory-column-section-title">
+                                <span class="global-footer-directory-column-section-title-text">
+                                    MS Tools
+                                </span>
+                            </h3>
+                            <ul class="global-footer-directory-column-section-list">
+                                <li class="global-footer-directory-column-section-item">
+                                    <a class="global-footer-directory-column-section-link" title="Timer" onclick="openTimer()">Timer</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="global-footer-mini">
                     <div class="global-footer-mini-legal">
                         <div class="global-footer-mini-legal-copyright">Copyright © 2023 Momentum Society.  All rights reserved.</div>
