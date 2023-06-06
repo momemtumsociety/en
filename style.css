@@ -1739,7 +1739,7 @@ a {
     position: relative;
     display: grid;
     grid-gap: 24px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
 }
 
@@ -1798,6 +1798,18 @@ a {
     height: 100%;
 }
 
+.recipes-info .crispy-roasted-rice-cake-image{
+    background: url('Images/Recipes/crispy-roasted-rice-cake.jpg') no-repeat top;
+    background-size: cover;
+    height: 100%;
+}
+
+.recipes-info .three-in-one-fried-rice-cake-image{
+    background: url('Images/Recipes/three-in-one-fried-rice-cake.jpg') no-repeat top;
+    background-size: cover;
+    height: 100%;
+}
+
 .recipes-info .tile-description{
     display: flex;
     flex-direction: column;
@@ -1834,9 +1846,16 @@ a {
     margin-top: 12px;
 }
 
+@media only screen and (max-width: 800px){
+    .recipes-info .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
 @media only screen and (max-width: 734px){
     .recipes-info .grid{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .recipes-info .tile-description{
@@ -1851,5 +1870,11 @@ a {
 
     .recipes-info .tile-timestamp{
         margin-top: 8px;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    .recipes-info .grid{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
