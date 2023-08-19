@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Recipes - Fried Rice Cake with Red Wine</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="..//Icon/ms-logo_v3.png" type="image/icon type">
+        <link rel="stylesheet" href="recipes.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <section id="global-nav">
+            <div class="global-nav-content">
+                <ul class="global-nav-list">
+                    <li class="global-nav-item global-nav-logo">
+                        <a href="../index.html" class="global-nav-link">
+                            <span class="global-nav-image">
+                                <img src="../Icon/ms-logo-nav.png">
+                            </span>
+                        </a>
+                    </li>
+                    <li class="global-nav-item global-nav-stp-button">
+                        <div id="global-nav-stp" class="global-nav-stp-wrapper">
+                            <div class="global-nav-link-stp" onclick="scrollToTop()">
+                                <span class="global-nav-image">
+                                    <img src="../Icon/arrow-circle-up.png" class="arrow" title="slide to top">
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="global-nav-menu-list" class="global-nav-list bar">
+                    <li class="global-nav-item global-nav-menu">
+                        <div class="global-nav-menu-list" id="menu-list" onclick="opennavFunction()">
+                            <div class="global-nav-menu-list-content">
+                                <div class="menu-title">
+                                    <span class="menu-title-text">
+                                        MS Recipes
+                                    </span>
+                                </div>
+                                <div class="menu-list">
+                                    <div class="global-nav-submenu">
+                                        <div class="global-nav-submenu-title">
+                                            <span class="global-nav-title-text">
+                                                Products
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- BAIGUO -->
+                                    <div class="global-nav-submenu">
+                                        <a href="../baiguo.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                BAIGUO
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- Rice Cake -->
+                                    <div class="global-nav-submenu">
+                                        <a href="../ricecake.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                Rice Cake
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- Red Wine -->
+                                    <div class="global-nav-submenu">
+                                        <a href="../redwine.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                FUZHOU Red Wine
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="global-nav-submenu">
+                                        <div class="global-nav-submenu-title">
+                                            <span class="global-nav-title-text">
+                                                Others
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- About MS -->
+                                    <div class="global-nav-submenu">
+                                        <a href="../about.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                About MS
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- Contact MS -->
+                                    <div class="global-nav-submenu">
+                                        <a href="../contact.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                Contact MS
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <!-- MS Recipes -->
+                                    <div class="global-nav-submenu">
+                                        <a href="../recipes.html" class="global-nav-submenu-link">
+                                            <span class="global-nav-link-text-container">
+                                                MS Recipes
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu-timer" id="menu-timer">
+                                    <div class="menu-timer-content">
+                                        <div class="timer-header">
+                                            <div class="timer-title">
+                                                Timer
+                                            </div>
+                                            <div class="timer-countdown" id="timer-countdown">
+                                                00:00
+                                            </div>
+                                        </div>
+                                        <div class="timer-button">
+                                            <button type="button" class="start-puase-button">
+                                                <span class="st-button-background">
+                                                    <img src="..//Icon/big-play-icon.png" class="button-icon" id="timer-play-icon" onclick="spTimer()">
+                                                    <img src="..//Icon/reset-icon.png" class="button-icon" id="timer-reset-icon" onclick="resetTimer()">
+                                                    <img src="..//Icon/stop-icon.png" class="button-icon" id="timer-stop-icon" onclick="stopTimer()">
+                                                </span>
+                                            </button>
+                                            <button type="button" class="close-button" onclick="closeTimer()">
+                                                <span class="close-button-background">
+                                                    <img src="../Icon/big-close-icon.png" class="button-icon">
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="menu-timer-selector">
+                                        <button type="button" class="timer-selector-button" onclick="setTime(60)">
+                                            <span class="selector-button-text">
+                                                1 min
+                                            </span>
+                                        </button>
+                                        <button type="button" class="timer-selector-button" onclick="setTime(120)">
+                                            <span class="selector-button-text">
+                                                2 mins
+                                            </span>
+                                        </button>
+                                        <button type="button" class="timer-selector-button" onclick="setTime(300)">
+                                            <span class="selector-button-text">
+                                                5 mins
+                                            </span>
+                                        </button>
+                                        <button type="button" class="timer-selector-button" onclick="setTime(600)">
+                                            <span class="selector-button-text">
+                                                10 mins
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div id="countdown-audio">
+                                        <audio id="audio" preload="metadata">
+                                            <source src="../Audio/Radar.mp3" type="audio/mpeg">
+                                        </audio>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <label id="global-nav-curtain"></label>
+        <!-- Main Content -->
+        <section id="main">
+            <section>
+                <article class="article">
+                    <div class="features-header">
+                        <!-- Release Date -->
+                        <div class="timestamp component">
+                            <div class="content">
+                                <div class="eyebrow">
+                                    <span class="eyebrow-date">
+                                        18 August 2023
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Recipe Name -->
+                        <div class="pagetitle component">
+                            <div class="content">
+                                <h1 class="headline">
+                                    Fried Rice Cake with Red Wine (Recommended)
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cover Image -->
+                    <figure class="image component">
+                        <div class="content">
+                            <div class="image-sharesheet">
+                                <a class="model-gallery-trigger">
+                                    <div class="image-asset">
+                                        <picture class="picture">
+                                            <img class="picture-image" src="../Images/Recipes/fried-rice-cake-with-red-wine.jpg">
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="image-description">
+                                <div>
+
+                                </div>
+                                <a href="../Images/Recipes/fried-rice-cake-with-red-wine.jpg" class="icon-arrowdown" download></a>
+                            </div>
+                        </div>
+                    </figure>
+                    <div class="pagebody component">
+                        <!-- Ingredients -->
+                        <div class="content left">
+                            <h2 class="headline">
+                                Ingredients
+                            </h2>
+                            <div class="container">
+                                <p>
+                                    <span class="item">
+                                        BAIGUO (Rice Cake)
+                                    </span>
+                                    <span class="quantity">
+                                        5 pieces
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="item">
+                                        Egg
+                                    </span>
+                                    <span class="quantity">
+                                        3 untis
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Sauce and Others -->
+                        <div class="content right">
+                            <h2 class="headline">
+                                Sauce and Others
+                            </h2>
+                            <div class="container">
+                                <p>
+                                    <span class="item">
+                                        Light soy sauce
+                                    </span>
+                                    <span class="quantity">
+                                        1.5 tablespoon
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="item">
+                                        Red Wine
+                                    </span>
+                                    <span class="quantity">
+                                        1 tablespoon
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Instructions -->
+                    <div class="instructions component">
+                        <div class="content">
+                            <h2 class="headline">
+                                Instructions
+                            </h2>
+                            <div class="container">
+                                <ol>
+                                    <li>
+                                        Refrigerated or frozen BAIGUO, if any, needs to be rewarmed.
+                                        <img class="inst-image" src="../Images/Recipes/frcwrw_01.jpg">
+                                    </li>
+                                    <li>
+                                        Then, slice it. Use the knife method of slicing, not for sawing. (If you feel it sticking to the knife, wash the knife with water.)
+                                        <img class="inst-image" src="../Images/Recipes/frcwrw_02.jpg">
+                                    </li>
+                                    <li>
+                                        Once cut, wash the BAIGUO in water and drain.
+                                        <img class="inst-image" src="../Images/Recipes/frcwrw_03.jpg">
+                                    </li>
+                                    <li>
+                                        Beat the eggs and set aside.
+                                    </li>
+                                    <li>
+                                        Heat a pan, add oil and fry the eggs until half cooked, remove from pan and set aside.
+                                        <img class="inst-image" src="../Images/Recipes/frcwrw_04.jpg">
+                                    </li>
+                                    <li>
+                                        Heat a pan, add the oil and stir-fry the BAIGUO.
+                                        <img class="inst-image" src="../Images/Recipes/frcwrw_05.jpg">
+                                    </li>
+                                    <li>
+                                        Add the Red Wine and Light Soy Sauce and stir-fry. Add a little boiling water and turn up the heat to reduce the sauce.
+                                    </li>
+                                    <li>
+                                        Finally, add the eggs and toss them to coat well before removing from the pan.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <!-- Footer -->
+        <section id="global-footer">
+            <div class="global-footer-content">
+                <div class="global-footer-directory">
+                    <div class="global-footer-directory-column">
+                        <div class="global-footer-directory-column-section">
+                            <h3 class="global-footer-directory-column-section-title">
+                                <span class="global-footer-directory-column-section-title-text">
+                                    MS Tools
+                                </span>
+                            </h3>
+                            <ul class="global-footer-directory-column-section-list">
+                                <li class="global-footer-directory-column-section-item">
+                                    <a class="global-footer-directory-column-section-link" title="Timer" onclick="openTimer()">Timer</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="global-footer-mini">
+                    <div class="global-footer-mini-legal">
+                        <div class="global-footer-mini-legal-copyright">Copyright © 2023 Momentum Society.  All rights reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="recipes-script.js"></script>
+</html>
